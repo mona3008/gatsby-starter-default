@@ -12,4 +12,5 @@ const AboutPage = () => {
 }
 
 // Step 3: Export your component
+export const Head = () => <title>About Me</title>
 export default AboutPage
