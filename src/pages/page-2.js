@@ -1,17 +1,15 @@
-import * as React from "react"
-import { Link } from "gatsby"
+// Step 1: Import React
+import * as React from 'react'
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+// Step 2: Define your component
+const AboutPage = () => {
+  return (
+    <main>
+      <h1>About Me</h1>
+      <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
+    </main>
+  )
+}
 
-const SecondPage = () => (
-  <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
-)
-
-export const Head = () => <Seo title="Page two" />
-
-export default SecondPage
+// Step 3: Export your component
+export default AboutPage
