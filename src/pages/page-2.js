@@ -1,5 +1,6 @@
 // Step 1: Import React
 import * as React from 'react'
+import { Link } from 'gatsby'
 
 // Step 2: Define your component
 const AboutPage = () => {
@@ -8,9 +9,17 @@ const AboutPage = () => {
       <h1>About Me</h1>
       <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
     </main>
+    const page-2 = () => {
+  return (
+    <main>
+      <h1>This is my first link</h1>
+      <Link to="about">About</Link>
+      <p>If you see this you made it.</p>
+    </main>
+
   )
 }
 
 // Step 3: Export your component
-export const Head = () => <title>About Me</title>
-export default AboutPage
+export const Head = () => <title>Page-2</title>
+export default Page-2
