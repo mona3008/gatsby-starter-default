@@ -9,13 +9,6 @@ const AboutPage = () => {
       <h1>About Me</h1>
       <p>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
     </main>
-    const page-2 = () => {
-  return (
-    <main>
-      <h1>This is my first link</h1>
-      <Link to="about">About</Link>
-      <p>If you see this you made it.</p>
-    </main>
 
   )
 }
