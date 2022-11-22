@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
-const Layout = ({ children }) => {
+const Layout = ({ pageTitle,children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -31,8 +31,18 @@ const Layout = ({ children }) => {
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
         }}
+     
       >
-        <main>{children}</main>
+      <nav>
+        <ul>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li
+          </ul>
+          </nav>
+        <main>
+        <h1>{pageTitle}</h1>
+        {children}
+        </main>
         <footer
           style={{
             marginTop: `var(--space-5)`,
