@@ -15,6 +15,11 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-antd',
+      options: {
+        style: true
+      }
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
